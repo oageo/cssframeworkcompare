@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="normalize">
+	<header>
+		<h1>normalize</h1>
+		<p>このサイトは各種CSSフレームワークを同一の画面に適用し、これを比較できるようにしています。</p>
+	</header>
+	<main>
+		<section>
+			<h2>タイトル</h2>
+			<a href="/">
+				<button>ボタン</button>
+			</a>
+		</section>
+		<section>
+			<h2>フォーム</h2>
+			<form>
+				<div>
+					<label for="name">
+						お名前
+					</label>
+					<input type="text" name="name" id="name" required />
+				</div>
+				<div>
+					<label for="area-select">
+						お住まいの地域
+					</label>
+					<select name="area" id="area-select">
+						<option>北海道</option>
+						<option>本州</option>
+						<option>四国</option>
+						<option>九州・沖縄</option>
+					</select>
+				</div>
+				<input type="submit" value="登録" />
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>Produced by <a href="https://www.osumiakari.jp">Osumi Akari</a> with Love.</p>
+		<hr>
+		<span><a href="/">Top</a></span>
+		<span><a href="/list">List</a></span>
+		<span><a href="https://github.com/oageo/cssframeworkcompare">Source Code</a></span>
+	</footer>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@latest/normalize.css">
+</Layout>
+
+<style>
+</style>
